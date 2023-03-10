@@ -1,0 +1,91 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-c:#16133D;
+    --main-green:#3DB370;
+    --green-svg:#52C29D;
+    --border-c:#E5EAF4;
+    --opacity-c:#E5EAF4;
+    --text-sz:16px;
+    --title-sz:40px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.mb_100 {
+    margin-bottom: 100px;
+}
+
+.mb_12 {
+    margin-bottom: 12px;
+}
+
+.mb_15 {
+    margin-bottom: 15px;
+}
+
+.mb_40 {
+    margin-bottom: 40px;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    font-size: var(--title-sz);
+    color: var(--main-c);
+    letter-spacing: 0.2px;
+}
+
+.main-block_text{
+    line-height: 21px;
+    font-size: var(--text-sz);
+    color: var(--opacity-c);
+    font-weight: 400;
+}
+
+.text {
+    line-height: 28px;
+    font-size: var(--text-sz);
+    color: var(--main-c);
+    font-weight: 400;
+}
+
+h2 {
+    line-height: 21.28px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--main-c);
+}
+
+.header {
+    display: block;
+    height: 80px;
+    padding-top: 22.5px;
+}
+
+.line {
+    display: block;
+    border-bottom: 1px solid #EFEEF3;
+    padding-bottom: 16.5px;
+
+}
+
+.block-cards_item {
+    display: block;
+    width: 370px;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+}
+    
