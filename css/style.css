@@ -36,6 +36,10 @@
     margin-bottom: 40px;
 }
 
+.mb_30 {
+    margin-bottom: 30px;
+}
+
 body {
     font-family: 'Roboto';
 }
@@ -82,10 +86,74 @@ h2 {
 
 }
 
+.main-block_cards {
+    display: flex;
+    gap: 30px;
+}
+
 .block-cards_item {
     display: block;
     width: 370px;
     border: 1px solid #E5EAF4;
     border-radius: 8px;
+    padding: 40.5px 55px 40.5px 40px;
 }
+
+.card-item__border {
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+}
+
     
+#svg {
+    width: 39px;
+    height: 36px;
+    position: relative;
+    top: 14px;
+    left: 12px;
+}
+
+.path1,.path2,.path5 {
+    fill: #D1E7FF;
+    
+}
+.path3 {
+    fill:#E8F3FF ;
+    
+}
+.path4,.path6,.path7 {
+    fill: #B9DCFF;
+    
+}
+.path8 {
+    fill: #007FFC;   
+}
+
+path {
+    transition: all 0.2s;    
+}
+
+
+.card-item__border:hover svg .path8 {
+  fill: #52C29D;
+}
+.card-item__border:hover svg .path1,
+.card-item__border:hover svg .path2,
+.card-item__border:hover svg .path5,
+.card-item__border:hover svg .path4,
+.card-item__border:hover svg .path6,
+.card-item__border:hover svg .path7 {
+    fill: #CAEFF2;
+}
+
+.card-item__text--green {
+    font-weight: 600;
+    line-height: 18.75px;
+    font-size: var(--text-sz);
+    color: var(--main-green);
+    cursor: pointer;
+}
