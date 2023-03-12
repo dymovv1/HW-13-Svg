@@ -28,8 +28,20 @@
     margin-bottom: 12px;
 }
 
+.mb_32 {
+    margin-bottom: 32px;
+}
+
 .mb_15 {
     margin-bottom: 15px;
+}
+
+.mb_27 {
+    margin-bottom: 27px;
+}
+
+.mb_36 {
+    margin-bottom: 36px;
 }
 
 .mb_40 {
@@ -97,14 +109,22 @@ h2 {
     border: 1px solid #E5EAF4;
     border-radius: 8px;
     padding: 40.5px 55px 40.5px 40px;
+    transition: all 0.2s;
 }
+
+.block-cards_item:hover {
+    border: 1px solid #52C29D;
+    transform: scale(1.03); 
+    box-shadow: 5px 5px 5px 5px #EFEEF3;
+}
+
+
 
 .card-item__border {
     width: 64px;
     height: 64px;
     border: 1px solid rgba(21, 101, 216, 0.1);
     border-radius: 16px;
-    cursor: pointer;
     display: inline-flex;
 }
 
@@ -115,6 +135,14 @@ h2 {
     position: relative;
     top: 14px;
     left: 12px;
+}
+
+.svg-telephone_icon {
+    position: relative;
+    width: 39px;
+    height: 36px;
+    top: 14px;
+    left: 18px;
 }
 
 .path1,.path2,.path5 {
@@ -138,22 +166,68 @@ path {
 }
 
 
-.card-item__border:hover svg .path8 {
-  fill: #52C29D;
+
+.block-cards_item:hover svg .path8 {
+    fill: #52C29D;
 }
-.card-item__border:hover svg .path1,
-.card-item__border:hover svg .path2,
-.card-item__border:hover svg .path5,
-.card-item__border:hover svg .path4,
-.card-item__border:hover svg .path6,
-.card-item__border:hover svg .path7 {
+
+
+.block-cards_item:hover svg .path1,
+.block-cards_item:hover svg .path2,
+.block-cards_item:hover svg .path5,
+.block-cards_item:hover svg .path4,
+.block-cards_item:hover svg .path6,
+.block-cards_item:hover svg .path7 {
     fill: #CAEFF2;
 }
 
-.card-item__text--green {
+.card-item__button--green {
     font-weight: 600;
     line-height: 18.75px;
     font-size: var(--text-sz);
     color: var(--main-green);
     cursor: pointer;
+    border: none;
+    background: none;
+    font-family: "Roboto";
 }
+
+.main {
+    padding-bottom: 98px;
+}
+
+.footer {
+    background-color: var(--main-c);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-block__icons {
+    display: flex;
+    gap: 10px;
+}
+
+.block-icon__grey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background: #EFEEF3;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.block-icon__grey:hover svg path {
+    fill: #3DB370;
+}
+.block-icon__grey:hover {
+    box-shadow: 0px 0px 5px 3px var(--main-green);
+
+}
+
+.block-icon__path--black {
+    fill: #0D0D0D;
+}
+
+
